@@ -10,3 +10,12 @@ public:
         return (count*100)/s.length();
     }
 };
+
+
+//using in-built count 
+class Solution {
+public:
+    int percentageLetter(string s, char letter) {
+        return 100.0*count(begin(s), end(s), letter)/size(s);
+    }
+};
